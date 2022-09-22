@@ -22,7 +22,7 @@ public class FileReader {
                 phone = phone.substring(phone.indexOf(" ")+1);
                 profile = new Profile(name,Integer.valueOf(age),email,Long.valueOf(phone));
             } catch (IOException e) {
-                System.out.println("An error occurred.");
+                System.out.println("An error occurred."+ e.getMessage());
                 e.printStackTrace();
             }
         return profile;
